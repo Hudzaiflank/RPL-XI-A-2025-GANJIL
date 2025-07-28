@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //  1. variabel
+      //   1.1 const
+      const nama = "hasna";
+      //   nama = "annisa";
+
+      //   1.2 let
+      let mantan = "claire";
+      let totalMantan = 1;
+
+      mantan = "annisa";
+      totalMantan = 2;
+      console.log(mantan + " adalah mantan ke " + totalMantan);
+
+      //   2. operator
+      //   2.1 operator aritmatika
+      let number_1 = 30;
+      let number_2 = 10;
+      console.log(number_1 + number_2);
+      console.log(number_1 * number_2);
+      console.log(number_1 / number_2);
+      console.log(number_1 % number_2);
+
+      //   2.2 operator comparison
+      let huruf = "10";
+      console.log(number_1 > number_2);
+      console.log(number_1 < number_2);
+      console.log(number_2 == huruf);
+      console.log(number_2 === huruf);
+
+      //   2.3 logical operator
+      //   AND -> &&
+      // OR -> ||
+      //   NOT -> !
+      console.log(true && true);
+      console.log(true && false);
+      console.log(true || true);
+      console.log(true || false);
+      let isLoginEmail = true;
+      let isLoginPassword = false;
+
+      //   3. pengkondisian (conditional)
+      //   3.1 satu kondisi
+      let umur = 18;
+      if (umur >= 18) {
+        console.log("boleh bikin ktp guys");
+      }
+      //   3.2 dua kondisi
+      umur = 9;
+      if (umur >= 18) {
+        console.log("boleh bikin ktp guys");
+      } else {
+        console.log("belum bisa bikin ktp");
+      }
+
+      //   3.3. lebih dari 2 kondisi
+      let nilai = 70;
+      if (nilai >= 80) {
+        console.log("kamu dapat A");
+      } else if (nilai < 80 && nilai >= 60) {
+        console.log("kamu dapat B");
+      } else if (nilai < 60 && nilai >= 50) {
+        console.log("kamu dapat C");
+      } else {
+        console.log("waduh ga lulus");
+      }
+    </script>
+  </body>
+</html>
