@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // BAB I FUNCTION
+      //   1.1 Function syntax
+
+      function salam() {
+        console.log("halo selamat siang");
+      }
+
+      salam();
+
+      // 1.2 definisi function ke variabel
+
+      let namaTeman = function () {
+        console.log("nama teman saya adalah wasawho");
+      };
+      //function tanpa nama disebut
+      // anonymous function
+      namaTeman();
+
+      //   1.3 method
+      let siswa = {
+        nama: "jamal",
+        umur: 20,
+        perkenalan: function () {
+          console.log("halo nama aku jamal " + this.nama);
+        },
+      };
+
+      siswa.perkenalan();
+
+      //   1.4 hoisting
+      iniFungsi();
+
+      function iniFungsi() {
+        console.log("ini hoisting");
+      }
+
+      //   1.5 parameter
+      function example(parameter) {
+        console.log("ini adalah presiden terbaik " + parameter);
+      }
+
+      example("mulyono");
+
+      //   1.6 fungsi lebih dari 1 parameter
+      function penjumlahan(angka1, angka2, angka3) {
+        console.log(angka1 + angka2 * angka3);
+      }
+
+      penjumlahan(60, 40, 5);
+
+      //   1.7 function dengan parameter function
+      function running(param) {
+        param();
+      }
+      running(function () {
+        console.log("function di dalam function");
+      });
+      //   1.8 arrow function
+      const berlari = (param) => param();
+      berlari(() => console.log("ini adalah arrow function"));
+    </script>
+  </body>
+</html>

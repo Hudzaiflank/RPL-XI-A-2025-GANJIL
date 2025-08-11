@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>daftar nomor</h1>
+    <ul id="number-list"></ul>
+    <button onclick="addNumber()">tambah nomor</button>
+
+    <script>
+      function addNumber() {
+        const list = document.getElementById("number-list");
+
+        // menghitung jumlah item yang sudah ada
+        const currentItemCount = list.children.length;
+
+        //membuat elemen list yang baru
+        const newListItem = document.createElement("li");
+
+        //memberikan nomor pada list selanjutnya
+        newListItem.innerText = "ini list ke " + (currentItemCount + 1);
+
+        list.appendChild(newListItem);
+      }
+    </script>
+  </body>
+</html>
